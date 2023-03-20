@@ -1,12 +1,13 @@
 //
-//  LoginViewData.swift
-//  test mvvm
+//  ___VARIABLE_moduleName___ViewData.swift
+//  ___PROJECTNAME___
 //
-//  Created by Guimel Moreno on 07/03/23.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  ___COPYRIGHT___
 //
 
 import Foundation
 
-struct LoginViewData: Equatable {
+struct ___VARIABLE_moduleName___ViewData: Equatable {
     var message: String
 }

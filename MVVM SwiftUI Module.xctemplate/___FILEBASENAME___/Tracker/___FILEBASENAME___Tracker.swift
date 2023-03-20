@@ -15,10 +15,8 @@ protocol ___VARIABLE_moduleName___TrackerProtocol {
 
 struct ___VARIABLE_moduleName___Tracker {    
     
-    private var analytics: FITAnalyticsManager
-    
-    init(analytics: FITAnalyticsManager = .sharedInstance() ) {
-        self.analytics = analytics
+    init() {
+        
     }
 }
 

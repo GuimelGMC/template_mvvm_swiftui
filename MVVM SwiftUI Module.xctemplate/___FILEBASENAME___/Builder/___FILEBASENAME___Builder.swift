@@ -11,7 +11,8 @@ import SwiftUI
 struct ___VARIABLE_moduleName___Builder {
 
 	func build(with navigationController: UINavigationController?) -> UIViewController {
-        let viewModel = ___VARIABLE_moduleName___ViewModel(router: ___VARIABLE_moduleName___Router(navigationController: navigationController),
+		let router = ___VARIABLE_moduleName___Router(navigationController: navigationController)
+        let viewModel = ___VARIABLE_moduleName___ViewModel(router: router,
                                                            tracker: ___VARIABLE_moduleName___Tracker())
         var view = ___VARIABLE_moduleName___View(viewModel: viewModel)
 		let hostingController = UIHostingController(rootView: view)
