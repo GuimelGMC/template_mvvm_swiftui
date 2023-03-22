@@ -1,25 +1,24 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  test mvvm
 //
-//  Created by Guimel Moreno on 27/02/23.
+//  Created by Guimel Moreno on 21/03/23.
 //  
 //
 
 import Combine
 import SwiftUI
 
-struct LoginView<T: LoginViewModelProtocol>: View {
+struct RegisterView<T: RegisterViewModelProtocol>: View {
 	
-    @ObservedObject var viewModel: T
+	@ObservedObject var viewModel: T
 	
-    init(viewModel: T) {
+	init(viewModel: T) {
 		self.viewModel = viewModel
 	}
 	
-	
 	var body: some View {
-        ScrollView {
+        VStack(spacing: 16){
             Text(.title)
             Button("Aceptar") {
                 viewModel.buttonTapped()
@@ -29,7 +28,7 @@ struct LoginView<T: LoginViewModelProtocol>: View {
             case .loading:
                 Text("Tap the button")
             case .loaded(let data):
-                TextLabel(data)
+                TextLabelExample(data)
             }
         }
         .clipped()
@@ -43,19 +42,18 @@ struct LoginView<T: LoginViewModelProtocol>: View {
 	}
 }
 
-private extension LoginView {
-    
-    func TextLabel(_ data: LoginViewData) -> some  View {
+private extension RegisterView {
+    func TextLabelExample(_ data: RegisterViewData) -> some View {
         Text(data.message)
     }
 }
 
 extension StringProtocol where Self == String {
-    static var title: String { String.localizedStringWithFormat("title") }
+//    static var titleRegister: String { String.localizedStringWithFormat("title") }
 }
 
-//struct LoginView_Preview: PreviewProvider {
+//struct RegisterView_Preview: PreviewProvider {
 //    static var previews: some View {
-//        LoginView(viewModel: LoginViewModel(router: LoginRouter(), tracker: LoginTracker()))
+//        RegisterView(viewModel: RegisterViewModel(router: RegisterRouter(), tracker: RegisterTracker()))
 //    }
 //}

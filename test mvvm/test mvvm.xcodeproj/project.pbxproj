@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		174C5EBD29B6DCBC00E63DFD /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174C5EBC29B6DCBC00E63DFD /* LoginViewState.swift */; };
-		1761654B29B70A9500743D58 /* LoginViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761654A29B70A9500743D58 /* LoginViewData.swift */; };
 		177D33AD29ADAB4B00E906E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33AC29ADAB4B00E906E2 /* AppDelegate.swift */; };
 		177D33AF29ADAB4B00E906E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33AE29ADAB4B00E906E2 /* SceneDelegate.swift */; };
 		177D33B629ADAB4C00E906E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177D33B529ADAB4C00E906E2 /* Assets.xcassets */; };
 		177D33B929ADAB4C00E906E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177D33B729ADAB4C00E906E2 /* LaunchScreen.storyboard */; };
-		177D33C529ADAB6A00E906E2 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33C029ADAB6A00E906E2 /* LoginRouter.swift */; };
-		177D33C629ADAB6A00E906E2 /* LoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33C129ADAB6A00E906E2 /* LoginTracker.swift */; };
-		177D33C729ADAB6A00E906E2 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33C229ADAB6A00E906E2 /* LoginBuilder.swift */; };
-		177D33C829ADAB6A00E906E2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33C329ADAB6A00E906E2 /* LoginView.swift */; };
-		177D33C929ADAB6A00E906E2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177D33C429ADAB6A00E906E2 /* LoginViewModel.swift */; };
+		17EF318329CABFFE00113D08 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF317629CABFFE00113D08 /* RegisterViewModel.swift */; };
+		17EF318429CABFFE00113D08 /* RegisterTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF317829CABFFE00113D08 /* RegisterTracker.swift */; };
+		17EF318529CABFFE00113D08 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF317B29CABFFE00113D08 /* RegisterView.swift */; };
+		17EF318629CABFFE00113D08 /* RegisterViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF317D29CABFFE00113D08 /* RegisterViewState.swift */; };
+		17EF318729CABFFE00113D08 /* RegisterViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF317E29CABFFE00113D08 /* RegisterViewData.swift */; };
+		17EF318829CABFFE00113D08 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF318029CABFFE00113D08 /* RegisterRouter.swift */; };
+		17EF318929CABFFE00113D08 /* RegisterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EF318229CABFFE00113D08 /* RegisterBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		174C5EBC29B6DCBC00E63DFD /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
-		1761654A29B70A9500743D58 /* LoginViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewData.swift; sourceTree = "<group>"; };
 		177D33A929ADAB4B00E906E2 /* test mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177D33AC29ADAB4B00E906E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		177D33AE29ADAB4B00E906E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		177D33B529ADAB4C00E906E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177D33B829ADAB4C00E906E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177D33BA29ADAB4C00E906E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		177D33C029ADAB6A00E906E2 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
-		177D33C129ADAB6A00E906E2 /* LoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTracker.swift; sourceTree = "<group>"; };
-		177D33C229ADAB6A00E906E2 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
-		177D33C329ADAB6A00E906E2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		177D33C429ADAB6A00E906E2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		17EF317629CABFFE00113D08 /* RegisterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		17EF317829CABFFE00113D08 /* RegisterTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterTracker.swift; sourceTree = "<group>"; };
+		17EF317B29CABFFE00113D08 /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		17EF317D29CABFFE00113D08 /* RegisterViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewState.swift; sourceTree = "<group>"; };
+		17EF317E29CABFFE00113D08 /* RegisterViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewData.swift; sourceTree = "<group>"; };
+		17EF318029CABFFE00113D08 /* RegisterRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
+		17EF318229CABFFE00113D08 /* RegisterBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,48 +47,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		174C5EB729B6DBFE00E63DFD /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				177D33C429ADAB6A00E906E2 /* LoginViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		174C5EB829B6DC2500E63DFD /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				177D33C029ADAB6A00E906E2 /* LoginRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		174C5EB929B6DC3700E63DFD /* Tracker */ = {
-			isa = PBXGroup;
-			children = (
-				177D33C129ADAB6A00E906E2 /* LoginTracker.swift */,
-			);
-			path = Tracker;
-			sourceTree = "<group>";
-		};
-		174C5EBA29B6DC6200E63DFD /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				177D33C229ADAB6A00E906E2 /* LoginBuilder.swift */,
-			);
-			path = Builder;
-			sourceTree = "<group>";
-		};
-		174C5EBB29B6DC6C00E63DFD /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1761654629B6FC4000743D58 /* State */,
-				1761654729B6FC4900743D58 /* UI */,
-				174C5EB829B6DC2500E63DFD /* Router */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		1761654529B6FB6400743D58 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,37 +54,6 @@
 				177D33AE29ADAB4B00E906E2 /* SceneDelegate.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		1761654629B6FC4000743D58 /* State */ = {
-			isa = PBXGroup;
-			children = (
-				174C5EBC29B6DCBC00E63DFD /* LoginViewState.swift */,
-				1761654A29B70A9500743D58 /* LoginViewData.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
-		1761654729B6FC4900743D58 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				177D33C329ADAB6A00E906E2 /* LoginView.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		1761654829B6FCD300743D58 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1761654929B7057000743D58 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		177D33A029ADAB4B00E906E2 = {
@@ -148,7 +75,7 @@
 		177D33AB29ADAB4B00E906E2 /* test mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				177D33CA29ADAB7400E906E2 /* Login */,
+				17EF317429CABFFE00113D08 /* Register */,
 				1761654529B6FB6400743D58 /* App */,
 				177D33B529ADAB4C00E906E2 /* Assets.xcassets */,
 				177D33B729ADAB4C00E906E2 /* LaunchScreen.storyboard */,
@@ -157,17 +84,74 @@
 			path = "test mvvm";
 			sourceTree = "<group>";
 		};
-		177D33CA29ADAB7400E906E2 /* Login */ = {
+		17EF317429CABFFE00113D08 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				1761654929B7057000743D58 /* Repository */,
-				174C5EBA29B6DC6200E63DFD /* Builder */,
-				174C5EB929B6DC3700E63DFD /* Tracker */,
-				174C5EB729B6DBFE00E63DFD /* ViewModel */,
-				174C5EBB29B6DC6C00E63DFD /* View */,
-				1761654829B6FCD300743D58 /* Model */,
+				17EF317529CABFFE00113D08 /* ViewModel */,
+				17EF317729CABFFE00113D08 /* Tracker */,
+				17EF317929CABFFE00113D08 /* View */,
+				17EF318129CABFFE00113D08 /* Builder */,
 			);
-			path = Login;
+			path = Register;
+			sourceTree = "<group>";
+		};
+		17EF317529CABFFE00113D08 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				17EF317629CABFFE00113D08 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		17EF317729CABFFE00113D08 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				17EF317829CABFFE00113D08 /* RegisterTracker.swift */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+		17EF317929CABFFE00113D08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				17EF317A29CABFFE00113D08 /* UI */,
+				17EF317C29CABFFE00113D08 /* State */,
+				17EF317F29CABFFE00113D08 /* Router */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		17EF317A29CABFFE00113D08 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				17EF317B29CABFFE00113D08 /* RegisterView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		17EF317C29CABFFE00113D08 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				17EF317D29CABFFE00113D08 /* RegisterViewState.swift */,
+				17EF317E29CABFFE00113D08 /* RegisterViewData.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		17EF317F29CABFFE00113D08 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				17EF318029CABFFE00113D08 /* RegisterRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		17EF318129CABFFE00113D08 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				17EF318229CABFFE00113D08 /* RegisterBuilder.swift */,
+			);
+			path = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,14 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1761654B29B70A9500743D58 /* LoginViewData.swift in Sources */,
-				177D33C629ADAB6A00E906E2 /* LoginTracker.swift in Sources */,
-				174C5EBD29B6DCBC00E63DFD /* LoginViewState.swift in Sources */,
-				177D33C829ADAB6A00E906E2 /* LoginView.swift in Sources */,
+				17EF318629CABFFE00113D08 /* RegisterViewState.swift in Sources */,
+				17EF318729CABFFE00113D08 /* RegisterViewData.swift in Sources */,
+				17EF318329CABFFE00113D08 /* RegisterViewModel.swift in Sources */,
 				177D33AD29ADAB4B00E906E2 /* AppDelegate.swift in Sources */,
-				177D33C929ADAB6A00E906E2 /* LoginViewModel.swift in Sources */,
-				177D33C729ADAB6A00E906E2 /* LoginBuilder.swift in Sources */,
-				177D33C529ADAB6A00E906E2 /* LoginRouter.swift in Sources */,
+				17EF318429CABFFE00113D08 /* RegisterTracker.swift in Sources */,
+				17EF318829CABFFE00113D08 /* RegisterRouter.swift in Sources */,
+				17EF318929CABFFE00113D08 /* RegisterBuilder.swift in Sources */,
+				17EF318529CABFFE00113D08 /* RegisterView.swift in Sources */,
 				177D33AF29ADAB4B00E906E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
