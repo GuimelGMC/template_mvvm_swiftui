@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol ___VARIABLE_moduleName___TrackerProtocol {
-    func viewAppered()
+    func viewAppeared()
 }
 
 struct ___VARIABLE_moduleName___Tracker {    
@@ -21,7 +21,7 @@ struct ___VARIABLE_moduleName___Tracker {
 }
 
 extension ___VARIABLE_moduleName___Tracker: ___VARIABLE_moduleName___TrackerProtocol {
-    func viewAppered() {
+    func viewAppeared() {
         
     }
 }

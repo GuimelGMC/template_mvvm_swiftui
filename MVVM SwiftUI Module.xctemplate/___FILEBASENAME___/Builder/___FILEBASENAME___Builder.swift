@@ -6,18 +6,20 @@
 //  ___COPYRIGHT___
 //
 
-import SwiftUI
+import UIKit
 
 struct ___VARIABLE_moduleName___Builder {
 
-	func build(with navigationController: UINavigationController?) -> UIViewController {
-		let router = ___VARIABLE_moduleName___Router(navigationController: navigationController)
-        let viewModel = ___VARIABLE_moduleName___ViewModel(router: router,
-                                                           tracker: ___VARIABLE_moduleName___Tracker())
-        var view = ___VARIABLE_moduleName___View(viewModel: viewModel)
-		let hostingController = UIHostingController(rootView: view)
-		view.hostingController = hostingController
+	private let viewModel: any ___VARIABLE_moduleName___ViewModelProtocol
+
+	init(navigation: UIViewController?) {
+        let router = ___VARIABLE_moduleName___Router(navigation: navigation)
+        viewModel = ___VARIABLE_moduleName___ViewModel(router: router,
+                                      tracker: RegisterTracker())
         
-		return hostingController
-	}
+    }
+    
+    func showScreen()  {
+        viewModel.showScreen()
+    }
 }

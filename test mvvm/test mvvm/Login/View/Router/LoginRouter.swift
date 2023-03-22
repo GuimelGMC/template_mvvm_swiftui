@@ -9,11 +9,12 @@
 import UIKit
 
 protocol LoginRouterProtocol {
-    mutating func showScreen(_ viewController: UIViewController)
+    func showScreen(_ viewController: UIViewController)
     func dismiss()
+    func openRegister()
 }
 
-struct LoginRouter {
+class LoginRouter {
     private var navigationController: UINavigationController?
     var window: UIWindow
     
@@ -24,7 +25,7 @@ struct LoginRouter {
 
 extension LoginRouter: LoginRouterProtocol {
     
-    mutating func showScreen(_ viewController: UIViewController) {
+    func showScreen(_ viewController: UIViewController) {
         let navigation = UINavigationController(rootViewController: viewController)
         navigationController = navigation
         window.rootViewController = navigation
@@ -33,5 +34,11 @@ extension LoginRouter: LoginRouterProtocol {
     
     func dismiss() {
         
+    }
+    
+    func openRegister() {
+        guard let navigationController else { return }
+        let builder = RegisterBuilder(navigation: navigationController)
+        builder.showScreen()
     }
 }

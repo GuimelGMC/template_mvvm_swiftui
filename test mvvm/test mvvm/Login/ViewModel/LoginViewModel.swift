@@ -43,8 +43,9 @@ extension LoginViewModel: LoginViewModelProtocol {
     }
     
     func buttonTapped() {
-        let data = LoginViewData(message: "Hello World")
-        state = .loaded(data)
+//        let data = LoginViewData(message: "Hello World")
+//        state = .loaded(data)
+        router.openRegister()
     }
 }
 

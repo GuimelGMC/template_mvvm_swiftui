@@ -9,7 +9,8 @@
 import Combine
 
 protocol ___VARIABLE_moduleName___ViewModelProtocol: ObservableObject {
-	var state: ___VARIABLE_moduleName___State { get }
+	var state: ___VARIABLE_moduleName___ViewState { get }
+	func showScreen()
 	func viewAppeared()
 	func buttonTapped()
 }
@@ -22,7 +23,7 @@ final class ___VARIABLE_moduleName___ViewModel {
 	private let tracker: ___VARIABLE_moduleName___TrackerProtocol
 	private var viewData: ___VARIABLE_moduleName___ViewData?
 	
-	init(state: ___VARIABLE_moduleName___ViewModel.State = .loading,
+	init(state: ___VARIABLE_moduleName___ViewState = .loading,
          router: ___VARIABLE_moduleName___RouterProtocol,
          tracker: ___VARIABLE_moduleName___TrackerProtocol) {
 
@@ -35,21 +36,27 @@ final class ___VARIABLE_moduleName___ViewModel {
 
 extension ___VARIABLE_moduleName___ViewModel: ___VARIABLE_moduleName___ViewModelProtocol {
 
+	func showScreen() {
+        router.showScreen(viewModel: self)
+    }
+
 	func viewAppeared() {
 		tracker.viewAppeared()
 	}
 
 	func buttonTapped() {
-		
+		printHelloWorld()
 	}
 }
 
 private extension ___VARIABLE_moduleName___ViewModel {
-    viewData = ___VARIABLE_moduleName___ViewData(message: "Hola Mundo")
+	func printHelloWorld() {
+    	viewData = ___VARIABLE_moduleName___ViewData(message: "Hola Mundo")
 
-	guard let viewData else {
-		return
+		guard let viewData else {
+			return
+		}
+		state = .loaded(viewData)
+		self.viewData = viewData
 	}
-	state = .loaded(viewData)
-	self.viewData = viewData
 } 

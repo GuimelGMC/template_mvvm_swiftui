@@ -8,7 +8,6 @@
 
 import Combine
 import SwiftUI
-import VisualKit
 
 struct ___VARIABLE_moduleName___View<T: ___VARIABLE_moduleName___ViewModelProtocol>: View {
 	
@@ -19,7 +18,7 @@ struct ___VARIABLE_moduleName___View<T: ___VARIABLE_moduleName___ViewModelProtoc
 	}
 	
 	var body: some View {
-        ScrollView {
+        VStack(spacing: 16){
             Text(.title)
             Button("Aceptar") {
                 viewModel.buttonTapped()
@@ -50,7 +49,7 @@ private extension ___VARIABLE_moduleName___View {
 }
 
 extension StringProtocol where Self == String {
-    static var title: String { String.localizedStringWithFormat("title") }
+//    static var title___VARIABLE_moduleName___: String { String.localizedStringWithFormat("title") }
 }
 
 //struct ___VARIABLE_moduleName___View_Preview: PreviewProvider {

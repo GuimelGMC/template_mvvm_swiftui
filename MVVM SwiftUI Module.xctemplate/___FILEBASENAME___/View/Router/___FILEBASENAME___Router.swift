@@ -6,21 +6,31 @@
 //  ___COPYRIGHT___
 //
 
-import UIKit
+import SwiftUI
 
 protocol ___VARIABLE_moduleName___RouterProtocol {
+    func showScreen<T: ___VARIABLE_moduleName___ViewModelProtocol>(viewModel: T)
     func dismiss()
 }
 
-struct ___VARIABLE_moduleName___Router {
-    var navigationController: UINavigationController?
+class ___VARIABLE_moduleName___Router {
+    private var navigation: UIViewController?
     
-    init(navigationController: UINavigationController? = nil) {
-        self.navigationController = navigationController
+    init(navigation: UIViewController? = nil) {
+        self.navigation = navigation
     }
 }
 
 extension ___VARIABLE_moduleName___Router: ___VARIABLE_moduleName___RouterProtocol {
+
+    func showScreen<T>(viewModel: T) where T : ___VARIABLE_moduleName___ViewModelProtocol {
+        
+        guard let navigation = navigation as? UINavigationController else { return }
+        let view = ___VARIABLE_moduleName___View(viewModel: viewModel)
+        let host = UIHostingController(rootView: view)
+        navigation.pushViewController(host, animated: true)
+    }
+
     func dismiss() {
         
     }
