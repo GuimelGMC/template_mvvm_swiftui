@@ -1,5 +1,5 @@
 //
-//  RegisterView.swift
+//  LoginView.swift
 //  test mvvm
 //
 //  Created by Guimel Moreno on 21/03/23.
@@ -9,7 +9,7 @@
 import Combine
 import SwiftUI
 
-struct RegisterView<T: RegisterViewModelProtocol>: View {
+struct LoginView<T: LoginViewModelProtocol>: View {
 	
 	@ObservedObject var viewModel: T
 	
@@ -19,14 +19,14 @@ struct RegisterView<T: RegisterViewModelProtocol>: View {
 	
 	var body: some View {
         VStack(spacing: 16){
-            Text("")
-            Button("Aceptar") {
-                viewModel.buttonTapped()
-            }.frame(height: 60)
-            
             switch viewModel.state {
             case .loading:
-                Text("Tap the button")
+                Button("Tap me") {
+                    viewModel.buttonTapped()
+                }.frame(height: 60)
+                Button("Abir otro módulo") {
+                    viewModel.openOtherModule()
+                }.frame(height: 60)
             case .loaded(let data):
                 TextLabelExample(data)
             }
@@ -42,18 +42,18 @@ struct RegisterView<T: RegisterViewModelProtocol>: View {
 	}
 }
 
-private extension RegisterView {
-    func TextLabelExample(_ data: RegisterViewData) -> some View {
+private extension LoginView {
+    func TextLabelExample(_ data: LoginViewData) -> some View {
         Text(data.message)
     }
 }
 
 extension StringProtocol where Self == String {
-//    static var titleRegister: String { String.localizedStringWithFormat("title") }
+//    static var titleLogin: String { String.localizedStringWithFormat("title") }
 }
 
-//struct RegisterView_Preview: PreviewProvider {
-//    static var previews: some View {
-//        RegisterView(viewModel: RegisterViewModel(router: RegisterRouter(), tracker: RegisterTracker()))
-//    }
-//}
+struct LoginView_Preview: PreviewProvider {
+    static var previews: some View {
+        LoginView(viewModel: LoginViewModel(router: LoginRouter(), tracker: LoginTracker()))
+    }
+}

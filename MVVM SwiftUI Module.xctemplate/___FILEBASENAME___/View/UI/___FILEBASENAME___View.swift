@@ -19,14 +19,12 @@ struct ___VARIABLE_moduleName___View<T: ___VARIABLE_moduleName___ViewModelProtoc
 	
 	var body: some View {
         VStack(spacing: 16){
-            Text(.title)
-            Button("Aceptar") {
-                viewModel.buttonTapped()
-            }.frame(height: 60)
-            
             switch viewModel.state {
             case .loading:
                 Text("Tap the button")
+                Button("Aceptar") {
+                viewModel.buttonTapped()
+            }.frame(height: 60)
             case .loaded(let data):
                 TextLabelExample(data)
             }

@@ -15,7 +15,7 @@ struct ___VARIABLE_moduleName___Builder {
 	init(navigation: UIViewController?) {
         let router = ___VARIABLE_moduleName___Router(navigation: navigation)
         viewModel = ___VARIABLE_moduleName___ViewModel(router: router,
-                                      tracker: RegisterTracker())
+                                      tracker: ___VARIABLE_moduleName___Tracker())
         
     }
     

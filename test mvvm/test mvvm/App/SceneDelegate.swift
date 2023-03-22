@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             window = UIWindow(windowScene: windowScene)
             guard let window else { return }
-            var builder = LoginBuilder(with: window)
+            let builder = LoginBuilder(window: window)
             builder.showScreen()
         }
     
