@@ -1,4 +1,4 @@
-# Template_MVVM_SwiftUI
+# [Xcode] Template MVVM & SwiftUI
 
 Instrucciones para instalación de template:
 
